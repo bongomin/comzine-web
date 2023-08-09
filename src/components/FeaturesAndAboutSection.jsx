@@ -62,7 +62,7 @@ const FeaturesAndAboutSection = () => {
                         <div className="col-lg-6 col-xl-5 mb-50 mb-lg-0 wow fadeInUp" data-wow-delay="0.2s">
                             <div className="img-box1">
                                 <div className="img-1">
-                                    <img src="assets/img/drone-1.jpg" alt="About image" />
+                                    <img src="assets/img/about-1.jpg" alt="About image" />
                                 </div>
                                 <div className="img-2">
                                     <img src="assets/img/about/ab-1-2.jpg" alt="About image" />
