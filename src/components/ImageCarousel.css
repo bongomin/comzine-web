@@ -1,0 +1,48 @@
+/* Add your existing CSS styles here */
+
+.carousel-slide {
+    position: relative;
+  }
+  
+  .carousel-root img {
+    max-height: 600px; /* Adjust this value as needed */
+  }
+  
+  .slide-overlay {
+    position: absolute;
+    top: 50%;
+    right: 0; /* Adjust the value as needed */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    opacity: 0;
+    transform-origin: right;
+    transform: translateX(100%);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .carousel-root .carousel .slider-wrapper .slider .slide.selected .slide-overlay {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .slide-content {
+    padding: 10px;
+  }
+  
+  .slide-heading {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: left; /* Align the title to the left */
+    color: #fff; /* Set title color to white */
+  }
+  
+  .slide-description {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Add any additional styles as needed */
+  

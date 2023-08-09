@@ -1,0 +1,61 @@
+/* HeroSection.css */
+.vs-hero-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .vs-hero-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .ls-slide {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    text-align: center;
+    background-size: cover !important;
+  }
+  
+  .vs-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .vs-hero-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .vs-hero-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .vs-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  .vs-btn-primary {
+    background-color: #ff5500;
+    color: #fff;
+  }
+  
+  .vs-btn-primary:hover {
+    background-color: #e04a00;
+  }
+  
+  /* Add more styles as needed */
+  
