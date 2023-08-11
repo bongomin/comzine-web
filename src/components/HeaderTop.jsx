@@ -19,10 +19,10 @@ const HeaderTop = () => {
                         <div className="header-social style-white">
                             <span className="social-title">Follow Us On: </span>
                             <a href="#"><i className="fab fa-facebook-f"></i></a>
-                            <a href="#"><i className="fab fa-twitter"></i></a>
+                            <a href="https://twitter.com/Comzinetec"><i className="fab fa-twitter"></i></a>
                             <a href="#"><i className="fab fa-instagram"></i></a>
-                            <a href="#"><i className="fab fa-behance"></i></a>
-                            <a href="#"><i className="fab fa-youtube"></i></a>
+                            {/* <a href="#"><i className="fab fa-behance"></i></a>
+                            <a href="#"><i className="fab fa-youtube"></i></a> */}
                         </div>
                     </div>
                 </div>
