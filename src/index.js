@@ -19,9 +19,6 @@ root.render(
         <Route path="/contact" element={<ContactPage />} /> 
         <Route path="/services" element={<ServicesPage />} /> 
         <Route path="/projects" element={<ProjectsPage />} /> 
-
-
-
         <Route path="/" element={<App />} />
       </Routes>
     </BrowserRouter>
