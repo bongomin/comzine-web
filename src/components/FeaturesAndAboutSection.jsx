@@ -65,8 +65,8 @@ const FeaturesAndAboutSection = () => {
                                     <img src="assets/img/about-1.jpg" alt="About image" />
                                 </div>
                                 <div className="img-2">
-                                    <img src="assets/img/about/ab-1-2.jpg" alt="About image" />
-                                    <a className="play-btn style2 position-center popup-video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i className=""><i className="fas fa-play"></i></i></a>
+                                    <img src="assets/img/about/about1.png" alt="About image" width={344} height={282}/>
+                                    <a className="play-btn style2 position-center popup-video" href="#"><i className=""><i className="fas fa-play"></i></i></a>
                                 </div>
                             </div>
                         </div>
@@ -76,6 +76,10 @@ const FeaturesAndAboutSection = () => {
                             <p className="mb-4 mt-1 pb-3">
                             At Comzine Tech & Investments, we strive to cultivate a workplace environment that fosters innovation, collaboration, and a shared commitment to making a meaningful impact in the fields of health, climate change, and humanitarian initiatives. Our workplace policy is built upon the following principles:
                             </p>
+                            <span className="sec-subtitle"><i className="fas fa-bring-forward"></i>Motto</span>
+                            <p className="mb-4 mt-1 pb-3">
+                            "Harnessing Technology for Social Impact." 
+                            This slogan clearly communicates our company's commitment to leveraging technology for the betterment of society and aligns well with our focus on health, climate change, and humanitarian causes. It conveys a strong message of purpose and social responsibility, which can resonate with our target audience and create a compelling brand image.                            </p>
                             <div className="call-media">
                                 <div className="call-media__icon"><img src="assets/img/icon/tel-1-1.png" alt="icon" /></div>
                                 <div className="media-body">
