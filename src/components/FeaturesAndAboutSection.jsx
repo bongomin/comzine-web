@@ -56,7 +56,7 @@ const FeaturesAndAboutSection = () => {
 
             {/* About Us */}
             <section className="position-relative space-bottom">
-                <span className="about-shape1 d-none d-xl-block">Comzine T & I</span>
+                <span className="about-shape1 d-none d-xl-block">Comzinetech</span>
                 <div className="container z-index-common">
                     <div className="row gx-60">
                         <div className="col-lg-6 col-xl-5 mb-50 mb-lg-0 wow fadeInUp" data-wow-delay="0.2s">
