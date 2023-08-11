@@ -8,13 +8,14 @@ const MainMenu = () => {
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>
-                    <li className="menu-item-has-children">
-                        <Link to="/service">Service</Link>
+                    <li><Link to="/service">Services</Link></li>
+                    {/* <li className="menu-item-has-children">
+                        <Link to="/services">Service</Link>
                         <ul className="sub-menu">
-                            <li><Link to="/service">Service1</Link></li>
+                            <li><Link to="/services">Service1</Link></li>
                             <li><Link to="/service-details">Service2</Link></li>
                         </ul>
-                    </li>
+                    </li> */}
                     <li><Link to="/contact">Contact</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
                 </ul>

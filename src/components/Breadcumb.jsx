@@ -10,7 +10,7 @@ export default function Breadcumb(props) {
                 <div class="breadcumb-menu-wrap">
                     <ul class="breadcumb-menu">
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/contact">contact us</Link></li>
+                        <li><Link>{props.label}</Link></li>
                     </ul>
                 </div>
             </div>

@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 export default function Contact() {
   return (
     <div>
-      <Breadcumb label="Contact us"/>
+      <Breadcumb label="contact"/>
       <ContactForm/>
       <Footer/>
     </div>

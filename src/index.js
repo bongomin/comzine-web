@@ -6,7 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
-import ServicesPage from './pages/Services';
+import ServicesPage from './pages/ServicesPage';
 import ProjectsPage from './pages/Projects';
 
 
@@ -17,7 +17,7 @@ root.render(
       <Routes> 
         <Route path="/about" element={<AboutPage />} /> 
         <Route path="/contact" element={<ContactPage />} /> 
-        <Route path="/services" element={<ServicesPage />} /> 
+        <Route path="/service" element={<ServicesPage />} /> 
         <Route path="/projects" element={<ProjectsPage />} /> 
         <Route path="/" element={<App />} />
       </Routes>
