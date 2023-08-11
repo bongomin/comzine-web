@@ -2,7 +2,6 @@ import React from 'react';
 
 const MenuTop = () => {
     const logoStyle = {
-        width: '400px',
         height: '100px',
         display: 'block',
         maxWidth: '100%',
@@ -14,7 +13,7 @@ const MenuTop = () => {
                 <div className="row justify-content-between align-items-center gx-sm-0">
                     <div className="col">
                         <div className="header-logo">
-                            <a href="index.html"><img src="/logo.jpeg" alt="Comzine T & I" className="logo" style={logoStyle} /></a>
+                            <a href="index.html"><img src="/logo1.png" alt="Comzine T & I" className="logo" style={logoStyle} /></a>
                         </div>
                     </div>
                     <div className="col-auto header-info ">
