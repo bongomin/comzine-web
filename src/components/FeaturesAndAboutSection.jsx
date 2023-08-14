@@ -14,19 +14,19 @@ const FeaturesAndAboutSection = () => {
         {
             title: "Digital Health Solutions",
             icon: "assets/img/icon/fe-1-1.png",
-            description: "Develop innovative digital health platforms...",
+            description: "Empower the healthcare sector through the creation of innovative digital health platforms that revolutionize patient care, streamline medical processes, and enhance data-driven decision-making. From telemedicine solutions that enable remote consultations to health monitoring apps that empower individuals to take charge of their well-being, our team is dedicated to transforming healthcare with cutting-edge technology.",
             link: "/service-details",
         },
         {
             title: "Climate Change Technology",
             icon: "assets/img/icon/fe-1-2.png",
-            description: "Create technology-driven solutions to address...",
+            description: "Take up the challenge of addressing climate change with technology-driven solutions that mitigate environmental impact and promote sustainability. Our experts collaborate to develop tools and applications that harness renewable energy, optimize resource consumption, and analyze environmental data. By integrating technology into climate-conscious initiatives, we strive to make a positive impact on the planet and future generations.",
             link: "/service-details",
         },
         {
             title: "Humanitarian Tech Solutions",
             icon: "assets/img/icon/fe-1-3.png",
-            description: "Build technology solutions to support humanitarian...",
+            description: "Combine technology and compassion to create impactful solutions that provide support in humanitarian crises and disaster response. Our team is committed to developing innovative applications and platforms that connect affected communities, provide access to critical resources, and facilitate efficient coordination among aid organizations. By leveraging technology for the greater good, we aim to make a difference where it matters most.",
             link: "/service-details",
         },
     ];
@@ -40,8 +40,12 @@ const FeaturesAndAboutSection = () => {
                             <div key={index} className="col-xl-4">
                                 <div className="feature-style1" style={featDiv}>
                                     <div className="feature-icon"><img src={feature.icon} alt="Features" /></div>
-                                    <h3 className="feature-title h5"><a className="text-inherit" href={feature.link}>{feature.title}</a></h3>
-                                    <p className="feature-text">{feature.description}</p>
+                                    <h4 className="feature-title"><a className="text-inherit" href={feature.link}>{feature.title}</a></h4>
+                                    <p className="feature-text">
+                                        {feature.description.length > 300
+                                            ? `${feature.description.substring(0, 300)}...`
+                                            : feature.description.padEnd(300, ' ')}
+                                    </p>
                                     <Link to={feature.link} className="vs-btn style3">Read More<i className="far fa-long-arrow-right"></i></Link>
                                 </div>
                             </div>
