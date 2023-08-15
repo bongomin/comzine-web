@@ -19,7 +19,7 @@ const MenuTop = () => {
                     <div className="col-auto header-info ">
                         <div className="header-info_icon"><i className="fas fa-phone-alt"></i></div>
                         <div className="media-body">
-                            <span className="header-info_label">Call Anytime 24/7</span>
+                            <span className="header-info_label">Call Anytime</span>
                             <div className="header-info_link"><a href="tel:+256200928812">(+256) 200928812</a></div>
                         </div>
                     </div>
