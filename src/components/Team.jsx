@@ -4,7 +4,7 @@ const teamMembers = [
     {
         name: 'Joseph Mukkabi',
         role: 'CEO & Founder',
-        image: 'assets/img/team/t-1-1.jpg',
+        image: 'assets/img/team/pro2.png',
         social: [
             { icon: 'fab fa-facebook-f', link: '#' },
             { icon: 'fab fa-twitter', link: '#' },
@@ -14,7 +14,7 @@ const teamMembers = [
     {
         name: 'Joseph Mukkabi',
         role: 'CEO & Founder',
-        image: 'assets/img/team/t-1-1.jpg',
+        image: 'assets/img/team/pro2.png',
         social: [
             { icon: 'fab fa-facebook-f', link: '#' },
             { icon: 'fab fa-twitter', link: '#' },
@@ -23,8 +23,8 @@ const teamMembers = [
     },
     {
         name: 'NandawulaShakira',
-        role: 'Adminitrator',
-        image: 'assets/img/team/t-1-1.jpg',
+        role: 'Office Adminitrator & Finance officer',
+        image: 'assets/img/team/pro4.png',
         social: [
             { icon: 'fab fa-facebook-f', link: '#' },
             { icon: 'fab fa-twitter', link: '#' },
@@ -33,8 +33,8 @@ const teamMembers = [
     },
     {
         name: 'Bongomin Daniel',
-        role: 'Lead software Engneer',
-        image: 'assets/img/team/t-1-1.jpg',
+        role: 'Software Engneer / Developer',
+        image: 'assets/img/team/pro1.jpeg',
         social: [
             { icon: 'fab fa-facebook-f', link: '#' },
             { icon: 'fab fa-twitter', link: '#' },
@@ -64,7 +64,7 @@ const Team = () => {
                                 <div className="team-style1">
                                     <div className="team-img">
                                         <a href="team-details.html">
-                                            <img src={member.image} alt="image" />
+                                            <img src={member.image} alt="image" style={{ height: '300px' }} />
                                         </a>
                                         <div className="team-social">
                                             {member.social.map((socialItem, socialIndex) => (
