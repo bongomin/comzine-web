@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ServiceModal from './ServiceModal';
 
 const Services = () => {
-         const services = [
+    const [selectedService, setSelectedService] = useState(null);
+
+    const openModal = (service) => {
+        setSelectedService(service);
+    };
+
+    const closeModal = () => {
+        setSelectedService(null);
+    };
+
+    const services = [
         {
             title: 'Healthcare Solutions',
             icon: 'assets/img/icon/sr-icon-1-1.png',
@@ -53,11 +64,23 @@ const Services = () => {
                                 <div className="service-icon"><img src={service.icon} alt={service.title} /></div>
                                 <h3 className="service-title h5"><a href="service-details.html">{service.title}</a></h3>
                                 <p className="service-text">{service.description}</p>
-                                <a href="service-details.html" className="vs-btn style3">Read More<i className="far fa-long-arrow-right"></i></a>
+                                <button
+                                    className="vs-btn style3"
+                                    onClick={() => openModal(service)}
+                                >
+                                    Read More
+                                    <i className="far fa-long-arrow-right"></i>
+                                </button>
                             </div>
                         </div>
                     ))}
                 </div>
+                {selectedService && (
+                    <ServiceModal
+                        selectedService={selectedService}
+                        closeModal={closeModal}
+                    />
+                )}
             </div>
         </section>
     );

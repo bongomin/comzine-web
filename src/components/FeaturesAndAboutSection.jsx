@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ServiceModal from './ServiceModal';
 
 const FeaturesAndAboutSection = () => {
+
+    const [selectedService, setSelectedService] = useState(null);
+
+    const openModal = (service) => {
+        setSelectedService(service);
+    };
+
+    const closeModal = () => {
+        setSelectedService(null);
+    };
+
     const divStyle = {
         backgroundImage: `url(${'assets/img/bg/ab-bg-1-1.jpg'})`,
     };
@@ -46,7 +58,7 @@ const FeaturesAndAboutSection = () => {
                                             ? `${feature.description.substring(0, 300)}...`
                                             : feature.description.padEnd(300, ' ')}
                                     </p>
-                                    <Link to={feature.link} className="vs-btn style3">Read More<i className="far fa-long-arrow-right"></i></Link>
+                                    <button className="vs-btn style3" onClick={() => openModal(feature)}>Read More<i className="far fa-long-arrow-right"></i></button>
                                 </div>
                             </div>
                         ))}
@@ -94,6 +106,10 @@ const FeaturesAndAboutSection = () => {
                     </div>
                 </div>
             </section>
+            <ServiceModal
+                selectedService={selectedService}
+                closeModal={closeModal}
+            />
         </div>
     );
 };
