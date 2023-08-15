@@ -3,75 +3,94 @@ import React from 'react';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
+    const footerInfoGroups = [
+        {
+            icon: 'fal fa-map-marker-alt',
+            label: 'Office Address',
+            content: 'Kireka Lorry Park next to post bank',
+        },
+        {
+            icon: 'fal fa-clock',
+            label: 'Working Hours',
+            content: 'Weekdays 8am - 5:30pm',
+        },
+        {
+            icon: 'fal fa-phone-volume',
+            label: 'Contact Us',
+            content: [
+                <a key="email" href="mailto:info@techbiz.com">hello@comzine.com</a>,
+                <br key="br" />,
+                <a key="phone" href="tel:+2597462153">(+256) 200928812</a>,
+            ],
+        },
+    ];
+
+    const socialMediaLinks = [
+        { icon: 'fab fa-facebook-f', url: '#' },
+        { icon: 'fab fa-twitter', url: '#' },
+        { icon: 'fab fa-youtube', url: '#' },
+    ];
+
+    const footerNavLinks = [
+        'About Us',
+        'Our Mission',
+        'Meet The Team',
+        'Our Projects',
+        'Contact Us',
+    ];
+
+    const exploreLinks = [
+        'What we Offer',
+        'Help Center',
+    ];
+
     return (
         <footer className="footer-wrapper footer-layout1" data-bg-src="assets/img/shape/bg-footer-1-1.jpg">
             <div className="footer-top">
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm footer-info_group">
-                            <div className="footer-info">
-                                <div className="footer-info_icon"><i className="fal fa-map-marker-alt"></i></div>
-                                <div className="media-body">
-                                    <span className="footer-info_label">Office Address</span>
-                                    <div className="footer-info_link">Kireka Lorry Park next to post bank</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm footer-info_group">
-                            <div className="footer-info">
-                                <div className="footer-info_icon"><i className="fal fa-clock"></i></div>
-                                <div className="media-body">
-                                    <span className="footer-info_label">Working Hours</span>
-                                    <div className="footer-info_link">Weekdays 8am - 5:30pm</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm footer-info_group">
-                            <div className="footer-info">
-                                <div className="footer-info_icon"><i className="fal fa-phone-volume"></i></div>
-                                <div className="media-body">
-                                    <span className="footer-info_label">Contact Us</span>
-                                    <div className="footer-info_link">
-                                        <a href="mailto:info@techbiz.com">hello@comzine.com</a>
-                                        <br />
-                                        <a href="tel:+2597462153">(+256) 200928812</a>
+                        {footerInfoGroups.map((infoGroup, index) => (
+                            <div className="col-sm footer-info_group" key={index}>
+                                <div className="footer-info">
+                                    <div className="footer-info_icon"><i className={infoGroup.icon}></i></div>
+                                    <div className="media-body">
+                                        <span className="footer-info_label">{infoGroup.label}</span>
+                                        <div className="footer-info_link">{infoGroup.content}</div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
             <div className="widget-area">
                 <div className="container">
                     <div className="row justify-content-between">
+                        {/* About Us Widget */}
                         <div className="col-md-6 col-lg-4 col-xl-auto">
                             <div className="widget footer-widget">
                                 <h3 className="widget_title">About Us</h3>
                                 <div className="vs-widget-about">
                                     <p className="footer-text">
-                                        We are Technology-driven company dedicated to levaraging digital innovation,creativity and community-centered thinking to make lives better.
+                                        We are a Technology-driven company dedicated to leveraging digital innovation, creativity, and community-centered thinking to make lives better.
                                     </p>
                                     <div className="footer-social">
-                                        <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i className="fab fa-twitter"></i></a>
-                                        <a href="#"><i className="fab fa-instagram"></i></a>
-                                        <a href="#"><i className="fab fa-behance"></i></a>
-                                        <a href="#"><i className="fab fa-youtube"></i></a>
+                                        {socialMediaLinks.map((link, index) => (
+                                            <a key={index} href={link.url}><i className={link.icon}></i></a>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {/* Links Widgets */}
                         <div className="col-md-6 col-lg-2 col-xl-auto">
                             <div className="widget widget_nav_menu footer-widget">
                                 <h3 className="widget_title">Links</h3>
                                 <div className="menu-all-pages-container">
                                     <ul className="menu">
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Our Mission</a></li>
-                                        <li><a href="#">Meet The Teams</a></li>
-                                        <li><a href="#">Our Projects</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+                                        {footerNavLinks.map((link, index) => (
+                                            <li key={index}><a href="#">{link}</a></li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
@@ -81,14 +100,14 @@ const Footer = () => {
                                 <h3 className="widget_title">Explore</h3>
                                 <div className="menu-all-pages-container">
                                     <ul className="menu">
-                                        <li><a href="#">What we Offer</a></li>
-                                        <li><a href="#">Our Story</a></li>
-                                        <li><a href="#">Latest Posts</a></li>
-                                        <li><a href="#">Help Center</a></li>
+                                        {exploreLinks.map((link, index) => (
+                                            <li key={index}><a href="#">{link}</a></li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        {/* Office Maps Widget */}
                         <div className="col-md-6 col-lg-4 col-xl-auto">
                             <div className="widget footer-widget">
                                 <h3 className="widget_title">Office Maps</h3>
