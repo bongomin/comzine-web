@@ -8,6 +8,7 @@ import Services from './components/Services';
 import CounterSection from './components/CounterSection';
 import FeaturesAndAboutSection from './components/FeaturesAndAboutSection';
 import ImageCarousel from './components/ImageCarousel';
+import Team from './components/Team';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
       <FeaturesAndAboutSection />
       <Services />
       <CounterSection />
+      <Team/>
       <Footer />
     </div>
   );
