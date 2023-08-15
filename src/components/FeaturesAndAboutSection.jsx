@@ -77,7 +77,7 @@ const FeaturesAndAboutSection = () => {
                                 </div>
                                 <div className="img-2">
                                     <img src="assets/img/about/about1.png" alt="About image" width={344} height={282} />
-                                    <a className="play-btn style2 position-center popup-video" href="#"><i className=""><i className="fas fa-play"></i></i></a>
+                                    <a className="play-btn style2 position-center popup-video" href="https://www.youtube.com/watch?v=dLon-kjNYqI"><i className=""><i className="fas fa-play"></i></i></a>
                                 </div>
                             </div>
                         </div>
