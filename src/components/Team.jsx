@@ -2,7 +2,7 @@ import React from 'react';
 
 const teamMembers = [
     {
-        name: 'Joseph Mukkabi',
+        name: 'Joseph Mulabbi',
         role: 'CEO & Founder',
         image: 'assets/img/team/pro2.png',
         social: [
@@ -12,7 +12,7 @@ const teamMembers = [
         ],
     },
     {
-        name: 'Joseph Mukkabi',
+        name: 'Joseph Mulabbi',
         role: 'CEO & Founder',
         image: 'assets/img/team/pro2.png',
         social: [
@@ -22,7 +22,7 @@ const teamMembers = [
         ],
     },
     {
-        name: 'NandawulaShakira',
+        name: 'Nandawula Shakira',
         role: 'Office Adminitrator & Finance officer',
         image: 'assets/img/team/pro4.png',
         social: [
