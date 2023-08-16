@@ -12,16 +12,6 @@ const teamMembers = [
         ],
     },
     {
-        name: 'Joseph Mulabbi',
-        role: 'CEO & Founder',
-        image: 'assets/img/team/pro2.png',
-        social: [
-            { icon: 'fab fa-facebook-f', link: '#' },
-            { icon: 'fab fa-twitter', link: '#' },
-            { icon: 'fab fa-instagram', link: '#' },
-        ],
-    },
-    {
         name: 'Nandawula Shakira',
         role: 'Office Adminitrator & Finance officer',
         image: 'assets/img/team/pro4.png',
@@ -45,6 +35,8 @@ const teamMembers = [
 ];
 
 const Team = () => {
+    const displayedTeamMembers = teamMembers.slice(0, 3); // Display only the first three team members
+
     return (
         <div>
             <section className="space-top space-extra-bottom">
@@ -58,13 +50,12 @@ const Team = () => {
                         </div>
                     </div>
                     <div className="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2">
-                        {/* Map through team members */}
-                        {teamMembers.map((member, index) => (
-                            <div className="col-xl-3" key={index}>
+                        {displayedTeamMembers.map((member, index) => (
+                            <div className="col-xl-4" key={index}>
                                 <div className="team-style1">
                                     <div className="team-img">
                                         <a href="team-details.html">
-                                            <img src={member.image} alt="image" style={{ height: '300px' }} />
+                                            <img src={member.image} alt="image" style={{ height: '350px' }} />
                                         </a>
                                         <div className="team-social">
                                             {member.social.map((socialItem, socialIndex) => (
