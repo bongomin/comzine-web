@@ -24,7 +24,7 @@ const teamMembers = [
     {
         name: 'Bongomin Daniel',
         role: 'Software Engneer / Developer',
-        image: 'assets/img/team/pro1.jpeg',
+        image: 'assets/img/team/pro1.jpg',
         social: [
             { icon: 'fab fa-facebook-f', link: '#' },
             { icon: 'fab fa-twitter', link: '#' },

@@ -45,7 +45,7 @@ const ImageCarousel = () => {
         >
             {Array.from({ length: slideCount }).map((_, index) => (
                 <div key={index} className="carousel-slide">
-                    <img src={`assets/img/bg-${index + 1}.jpg`} alt={`Investment and Tech ${index + 1}`} />
+                    <img src={`assets/img/rsz_bg-${index + 1}.jpeg`} alt={`Investment and Tech ${index + 1}`} />
 
                     <div className="slide-overlay">
                         <div className="slide-content">
